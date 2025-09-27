@@ -5,39 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
+    <link rel="stylesheet" href="../style/styles.css">
 </head>
 
 <body>
-    <div id="header">Хэдер</div>
-    <div id="menu">
-        <ul>
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="practices.html">Практики</a></li>
-            <li><a href="goods.html">Товары</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
+    <div class="page-container">
+        <div class="header">Свяжитесь с нами</div>
+        
+        <div class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <div class="page-header">
+                <h1 class="page-title">Контакты</h1>
+                <p class="page-subtitle">Мы всегда рады общению! Не стесняйтесь обращаться</p>
+            </div>
+            
+            <div class="contacts-container">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3 class="contact-title">Электронная почта</h3>
+                    <p class="contact-info">vovanya@mail.ru</p>
+                    <a href="mailto:vovanya@mail.ru" class="contact-button">Написать письмо</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3 class="contact-title">Адрес</h3>
+                    <p class="contact-info">г. Москва, ул. Колотушкина, д. 25, кв 14</p>
+                    <button class="contact-button" onclick="showMap()">Посмотреть на карте</button>
+                </div>
+                
+                <div class="contact-card highlight">
+                    <div class="contact-icon">📞</div>
+                    <h3 class="contact-title">Телефон</h3>
+                    <p class="contact-info">+7 (999) 123-45-67</p>
+                    <button class="contact-button urgent" onclick="window.location.href='tel:+79991234567'">
+                        📢 Позвоните мне ПОЖАЛУЙСТА, МНЕ ТАК ОДИНОКО
+                    </button>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h2 class="form-title">Напишите нам</h2>
+                <form class="form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Ваше имя" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Ваш email" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Ваше сообщение..." class="form-textarea" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="form-button">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2024 Всегда на связи. Ждём вашего звонка!</p>
+        </div>
     </div>
-    <div id="content">
-        <h1>Контакты</h1>
-        
-        <div>
-            <h2>Адрес электронной почты:</h2>
-            <p>vovanya@mail.ru</p>
-        </div>
-        
-        <div>
-            <h2>Адрес:</h2>
-            <p>г. Москва, ул. Колотушкина, д. 25, кв 14</p>
-        </div>
-        
-        <div>
-            <h2>Телефон:</h2>
-            <p>+7 (999) 123-45-67</p>
-            <button onclick="window.location.href='tel:+79991234567'">Позвоните мне ПОЖАЛУЙСТА, МНЕ ТАК ОДИНОКО</button>
-        </div>
-    </div>
-    <div id="footer">Футер</div>
+
+    <script>
+        function showMap() {
+            alert('Карта: г. Москва, ул. Колотушкина, д. 25, кв 14\n(Это демо-версия)');
+        }
+    </script>
 </body>
 
 </html>

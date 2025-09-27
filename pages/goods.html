@@ -5,44 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Товары</title>
+    <link rel="stylesheet" href="../style/styles.css">
 </head>
 
 <body>
-    <div id="header">Хэдер</div>
-    <div id="menu">
-        <ul>
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="practices.html">Практики</a></li>
-            <li><a href="goods.html">Товары</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
+    <div class="page-container">
+        <div class="header">Каталог товаров</div>
+        
+        <div class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <div class="page-header">
+                <h1 class="page-title">Наши товары</h1>
+                <p class="page-subtitle">Лучшие продукты для настоящих ценителей</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../images/rvotniki.jpg" alt="Рвотничек" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Рвотничек</h3>
+                        <p class="product-price">15 руб.</p>
+                        <p class="product-description">Сдобный рвотничек пряный нормальный</p>
+                        <button class="product-button">В корзину</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../images/zuzish.jpg" alt="Зузыши" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Зузыши 1 кг</h3>
+                        <p class="product-price">500 руб.</p>
+                        <p class="product-description">Зузыши на развес, толковые миланские зузыши</p>
+                        <button class="product-button">В корзину</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../images/airman.webp" alt="Воздух алтайский" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Воздух алтайский</h3>
+                        <p class="product-price">1000 руб.</p>
+                        <p class="product-description">Нормальный воздух, горный</p>
+                        <button class="product-button">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2024 Магазин уникальных товаров. Все права защищены.</p>
+        </div>
     </div>
-    <div id="content">
-        <h1>Каталог товаров</h1>
-        
-        <div>
-            <h2>Рвотничек</h2>
-            <img src="../images/rvotniki.jpg" alt="Рвотник" width="200" height="150">
-            <p><strong>Цена:</strong> 15 руб.</p>
-            <p>Сдобный рвотничек пряный нормальный.</p>
-        </div>
-        
-        <div>
-            <h2>Зузыши 1 кг</h2>
-            <img src="../images/zuzish.jpg" alt="Зузыш" width="150" height="200">
-            <p><strong>Цена:</strong> 500 руб.</p>
-            <p>Зузыши на развес, толковые миланские зузыши.</p>
-        </div>
-        
-        <div>
-            <h2>Воздух алтайский</h2>
-            <img src="../images/airman.webp" alt="Воздух" width="200" height="150">
-            <p><strong>Цена:</strong> 1000 руб.</p>
-            <p>Нормальный воздух, горный.</p>
-        </div>
-    </div>
-    <div id="footer">Футер</div>
 </body>
 
 </html>
